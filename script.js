@@ -303,3 +303,50 @@ if (askUserName === 'Юра' && askUserAge > 20) {
 } else {
   console.log('тебе тут не рады')
 }
+
+
+//-- 21 march
+//1. 
+let i = 1;
+for (i = 1; i < 101; i++) {
+  console.log(i);
+}
+//2.
+let i1 = 11;
+for (i1 = 11; i1 < 33; i1++) {
+  console.log(i1);
+}
+//3.
+let i3 = 0;
+for (i3 = 0; i3 < 101; i3=i3+2) {
+  console.log(i3);
+}
+//4. - - 
+let i4 = 0;
+for (i4 = 0; i4 < 100; i4=i4+1) {
+  console.log(i4);
+}
+//5.
+let i5 = 100;
+for (i5 = 100; i5 = 0; i5--) {
+  console.log(i5);
+}
+//6 
+let i6 = 0;
+while (i6 < 100){
+  i6++;
+  console.log(i6);
+}
+//7
+let i7 = 11;
+while (i7 < 33){
+  i7++;
+  console.log(i7);
+}
+//8 --
+let num =5;
+while (num <= 1000){
+  num * 3;
+  console.log(num);
+  break;
+}
