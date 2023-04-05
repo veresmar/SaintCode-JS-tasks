@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    // Поиск элементов по id (вернет 1)
+    const startElem = document.getElementById("start")
+    startElem.innerText = "Новый текст"
+
+    // Поиск элемента по class , вернет КОЛЛЕКЦИЮ
+    const spans = document.getElementsByClassName("new")
+    console.dir(spans)
+    // Перебор коллекции только через OF
+    for (let k of spans){
+        k.innerText = "!!!!!!!!!"
+    }
+
+    // поиск по тегу
+    const byTag = document.getElementsByTagName("span")
+    console.dir(byTag[2]) // получить один из спанов
+
+
+    /**
+     * querySelector - всегда первый элемент возвращает
+     */
+
+// Поиск элементов по id (вернет 1)
+    const queryExCss = document.querySelector("#start")
+    console.dir(queryExCss)
+
+    const queryExCssClass = document.querySelector(".new")
+    console.dir(queryExCssClass)
+
+    /**
+     * querySelectorAll - все элементы
+     */
+    const queryAllElements = document.querySelectorAll(".new")
+    console.dir(queryAllElements)
+
+
+    const queryAllTags = document.querySelectorAll("span")
+    console.dir(queryAllTags)
+
+
+
+    //
+
+    // Следующий узел того же
+    // родителя (следующий сосед) –
+    // в свойстве nextSibling, а предыдущий
+    // – в previousSibling.
+    //
+    //    Родитель доступен через parentNode.
+</script>
+<body>
+
+<div class="hello">
+<p>Абзац</p>
+<p>
+    <span class="new">Hello1</span>
+    <span id="start">Hello2</span>
+    <span class="new"> Не то</span>
+</p>
+</div>
+
+
+<!--- sadsd --->
+
+
+</body>
+<script src="js/31-03.js"></script>
+</html>

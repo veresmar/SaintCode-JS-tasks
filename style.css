@@ -1,0 +1,14 @@
+.popup {
+  display:none;
+  place-items:center;
+	position:fixed;
+  inset: 0;
+  background-color: antiquewhite;
+}
+.modal {
+  padding: 5rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 19rem;
+    background-color: rgb(196, 8, 8);
+}

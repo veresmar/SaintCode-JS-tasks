@@ -159,7 +159,7 @@ function getDistanceBetween2D(cord1, cord2) {
   const dy = y2 - y1;
   return Math.sqrt(dx * dx + dy * dy);
 }
-
+Math.sqrt((cord2.x-cord1.x)2 + (cord2.y-cord1.y)2).toFixed(3)
 // add code
 
 
